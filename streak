@@ -1,0 +1,12 @@
+#!/bin/sh
+
+# Define a timestamp function
+timestamp() {
+	date +"%m/%d/%Y %l:%S%p"
+}
+
+echo `timestamp` >> log.txt
+
+git add .
+git commit -m "Logged Commit."
+git push origin master
