@@ -1,11 +1,6 @@
 #!/bin/sh
 
-# Define a timestamp function
-timestamp() {
-	date +"%m/%d/%Y %r"
-}
-
-echo `timestamp` >> log.txt
+echo `date +"%m/%d/%Y %r"` >> log.txt
 
 git add .
 git commit -m "Logged Commit."
