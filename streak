@@ -2,7 +2,7 @@
 
 # Define a timestamp function
 timestamp() {
-	date +"%m/%d/%Y %l:%S%p"
+	date +"%m/%d/%Y %r"
 }
 
 echo `timestamp` >> log.txt
